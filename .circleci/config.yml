@@ -1,0 +1,8 @@
+orbs:
+  katalon-studio: katalon/katalon-studio@23.0.11
+workflows:
+    example-workflow:
+      jobs:
+        - katalon-studio/run:
+            KATALON_API_KEY: KATALON_API_KEY(f4a5d939-090c-4dfe-9a28-9e77b0bf182b) 
+            command_arguments: -retry=0 -testSuitePath="Test Suites/check title" -executionProfile="default" -browserType="Chrome" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true 
